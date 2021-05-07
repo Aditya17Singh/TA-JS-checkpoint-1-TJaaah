@@ -78,7 +78,8 @@ const divisionNumbers = function(numA,numB){
 9. Can function declaration be a Anonymous Function? Explain
 Function declaration be a Anonymous Function by arrow function you maake it by removing function keyword => .
 10. Give 5 example of good naming convention for defining a function. You can read the details below to do that.
-
+sayHello- Hello to someone.
+"get…" – return a value,
 ```md
 Functions are actions. So their name is usually a verb. It should be brief, as accurate as possible and describe what the function does, so that someone reading the code gets an indication of what the function does.
 
