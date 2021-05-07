@@ -48,15 +48,25 @@ getEvenSum(10);
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
 ```js
-let num= 1234
-let prod =1;
-while(num>0){
-let rem = num % 10;
- num = num - rem;
- prod = prod * rem;
- num = num /10;
-}if (num < 0){}
-console.log(prod);
+
+function getProductOfDigits(num){
+  if(num < 0){
+    return "not a valid input"
+  }else{
+     let prod =1;
+    while(num>0){
+    let rem = num % 10;
+    num = num - rem;
+    prod = prod * rem;
+    num = num /10;
+}return (prod);
+}
+}
+
+getProductOfDigits();
+
+
+
 
 ```
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
@@ -108,7 +118,17 @@ getOutput(); // Who are you
 ```
 
 9. Can a function have multiple return statement? Give one example if possible and explain the reason.
-Yes function have multiple return.
+Yes function have multiple return. ex - function check(num) {
+  if (num > 5) {
+    return 'Bigger than 5';
+  }
+
+  if (num < 5) {
+    return 'Smaller than 5';
+  }
+
+  return num;
+}
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
 In `for` loop you first define the variable and then check condition after that you give iteration.
 In `while` loop you first apply condition and you increment the value is to increment in the body.
